@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+int main(){
+    puts("entre com um valor de tom de cinza");
+    unsigned char n1;
+    scanf("%hhu", n1);
+
+    puts("entre com outro valor de tom de cinza");
+    unsigned char n2;
+    scanf("%hhu", n2);
+
+    unsigned char maior;
+    unsigned char menor;
+
+    maior = n1;
+    if(maior < n2 ){
+        maior = n2;
+        menor = n1;
+    }else{
+        maior = n1;
+        menor = n2;
+    }
+    
+    puts("diga um valor para a realização da normalização");
+    unsigned char normal;
+    scanf("%hhu", normal);
+
+    double equacacao = (normal-menor)/(maior-menor);
+    
+    printf("1f", equacacao);
+
+}
